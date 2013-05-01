@@ -1,3 +1,5 @@
+requires 'SQL::Maker';
+
 on 'configure' => sub {
 };
 
