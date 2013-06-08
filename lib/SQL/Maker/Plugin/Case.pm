@@ -38,7 +38,7 @@ SQL::Maker::Plugin::Case - It's new $module
     $case->when({ bar => 1 }, 3)
          ->when({ bar => 2 }, 0)
          ->when({ bar => 3 }, 2);
-    $cond->add(foo => [$case->as_sql, $case->bind]);
+    $cond->add(foo => \[$case->as_sql, $case->bind]),
          ->add(baz => 1);
 
     $select->add_select('*')
